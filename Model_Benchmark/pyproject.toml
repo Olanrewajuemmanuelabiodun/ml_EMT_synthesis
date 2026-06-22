@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools >= 42", "versioningit >= 2", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "zeolite_emt"
+requires-python = ">=3.9"
+dynamic = ["version"]
+dependencies = [
+	"joblib==1.5.1",
+	"json_tricks==3.17.3",
+	"xgboost",
+	"numpy",
+	"pandas==1.5.3",
+	"PyYAML==6.0.2",
+	"matplotlib",
+	"scikit_learn",
+	"seaborn"
+	]
